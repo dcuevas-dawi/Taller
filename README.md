@@ -1,6 +1,6 @@
-#Proyecto basado en un Taller.
+# Proyecto basado en un Taller.
 
-###El siguiente proyecto es una sencilla batería de ejemplos de diferentes temas de Java aplicados a la lógica de negocio de un Taller.
+### El siguiente proyecto es una sencilla batería de ejemplos de diferentes temas de Java aplicados a la lógica de negocio de un Taller.
 
 * Podemos tener dos tipos de talleres: talleres de coches y talleres de motos. Ambos tendrán el mismo comportamiento pero aceptarán diferentes tipos de vehiculos.
 

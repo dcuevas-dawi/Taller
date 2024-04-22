@@ -6,7 +6,7 @@ public class Taller {
 
     private String nombre;
     private String tipo;
-    private int plazas;
+    private int plazas; //Plazas máximas
     private int plazasUsadas;
     protected ArrayList<Elevador> elevadores = new ArrayList<Elevador>();
     private ArrayList<Compresor> compresores = new ArrayList<Compresor>();

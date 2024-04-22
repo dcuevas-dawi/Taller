@@ -1,6 +1,6 @@
 package dominio;
 
-public abstract  class Acceso {
+public abstract class Acceso {
 
     boolean estaAbierto = false;
 

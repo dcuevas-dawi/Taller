@@ -42,7 +42,7 @@ public class TallerCoches extends Taller{
 
     public void plazasExtra(){ //Si un elevador está arriba(con un coche cargado o no), se gana una plaza debajo suya.
         for(Elevador elevador : elevadores){
-            if(elevador.arriba == true){
+            if(elevador.arriba){
                 this.setPlazas(getPlazas()+1);
             }
         }

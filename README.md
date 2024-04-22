@@ -1,6 +1,6 @@
-# Proyecto basado en un Taller.
+# Proyecto para la gestión de un Taller.
 
-### El siguiente proyecto es una sencilla batería de ejemplos de diferentes temas de Java aplicados a la lógica de negocio de un Taller.
+### El siguiente proyecto es un programa que trata la lógica de negocio de un taller de vehículos.
 
 * Podemos tener dos tipos de talleres: talleres de coches y talleres de motos. Además tendrán especializaciones diferentes (como chapa y pintura, neumáticos, mecánica rápida...). Ambos tendrán el mismo comportamiento pero aceptarán diferentes tipos de vehiculos.
 

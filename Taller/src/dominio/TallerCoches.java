@@ -6,8 +6,12 @@ public class TallerCoches extends Taller{
 
     private ArrayList<Coche> vehiculos = new ArrayList<Coche>();
 
-    public TallerCoches(String nombre, String tipo, int plazas, int elevadores, int compresores) {
-        super(nombre, tipo, plazas, elevadores, compresores);
+        public TallerCoches(String licencia){
+            super(licencia);
+        }
+
+    public TallerCoches(String licencia, String nombre, String tipo, int plazas, int elevadores, int compresores) {
+        super(licencia, nombre, tipo, plazas, elevadores, compresores);
     }
 
     public void añadirCoche(Coche coche){
@@ -36,7 +40,7 @@ public class TallerCoches extends Taller{
 
     @Override
     public String toString() {
-        return "En el taller " + super.getNombre() + " hay " + super.getPlazasUsadas() + " coches de un total de " + super.getPlazas()
+        return "En el taller " + super.getNombre() + " con licencia " + super.getLicencia() + " hay " + super.getPlazasUsadas() + " coches de un total de " + super.getPlazas()
                 + ", " + super.getElevadores().size() + " elevadores y " + super.getCompresores().size() + " compresores.";
     }
 

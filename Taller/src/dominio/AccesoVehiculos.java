@@ -1,8 +1,12 @@
 package dominio;
 
-public class AccesoVehiculos extends Acceso{
+public class AccesoVehiculos implements Acceso{
 
     private boolean estaAbierto = false;
+
+    public AccesoVehiculos(boolean estaAbierto) {
+        this.estaAbierto = estaAbierto;
+    }
 
     @Override
     public void abrir() {

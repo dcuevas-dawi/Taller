@@ -56,12 +56,12 @@ public class Elevador implements Maquina{
         return true;
     }
 
-    public void setMatricula(Coche coche){
+    public void setMatricula(Vehiculo vehiculo){
 
-        if (this.getMaxPeso() >= coche.getPeso()){
+        if (this.getMaxPeso() >= vehiculo.getPeso()){
             
             if(this.matricula == null){
-                this.matricula = coche.getMatricula();
+                this.matricula = vehiculo.getMatricula();
             } else {
                 System.out.println("El elevador ya está ocupado");
             }

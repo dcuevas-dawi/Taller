@@ -2,21 +2,33 @@ package dominio;
 
 import java.util.ArrayList;
 
-public class Taller {
+public abstract class Taller {
 
+    private final String LICENCIA_MUNICIPAL;
     private String nombre;
     private String tipo;
     private int plazas; //Plazas máximas
     private int plazasUsadas;
+    private static int nTalleres = 0;
     protected ArrayList<Elevador> elevadores = new ArrayList<Elevador>();
     private ArrayList<Compresor> compresores = new ArrayList<Compresor>();
     private ArrayList<Acceso> accesos = new ArrayList<Acceso>();
 
-    public Taller(String nombre, String tipo, int plazas, int elevadores, int compresores) {
+    public Taller(String licencia){
+        this.LICENCIA_MUNICIPAL = licencia;
+    }
+
+    public Taller(String licencia ,String nombre, String tipo, int plazas, int elevadores, int compresores) {
+        this.LICENCIA_MUNICIPAL = licencia;
         this.nombre = nombre;
         this.tipo = tipo;
         this.plazas = plazas;
         this.plazasUsadas = 0;
+        Taller.nTalleres++;
+    }
+
+    public String getLicencia(){
+        return this.LICENCIA_MUNICIPAL;
     }
 
     public String getNombre() {
@@ -81,6 +93,10 @@ public class Taller {
 
     public void cerrarAcceso(int a){
         accesos.get(a).cerrar();
+    }
+
+    public static int getNTalleres(){
+        return Taller.nTalleres;
     }
 
 }

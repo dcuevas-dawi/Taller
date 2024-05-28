@@ -1,8 +1,6 @@
 package dominio;
 
-public abstract class Acceso {
-
-    boolean estaAbierto = false;
+public interface Acceso {
 
     public abstract void abrir();
 
